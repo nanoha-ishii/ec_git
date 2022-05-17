@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>なのはな本舗</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="css/new-stylecss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+        <script src="js/jquery-3.6.0.min.js"></script> 
+        
+<!--市川追記_20220425 ここから-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        
+        <script>
+        $(function() {
+            $('.slider').bxSlider({
+              auto: true, /* 追加部分 */
+              controls: false, /* 追加部分 */
+              pager: false /* 追加部分 */
+            });
+          });
+        </script>
+
+<!--市川追記_20220425 ここまで-->
+    </head>
+
+    <body>
+        <header>
+          <img src="photo/logo.png" class="logo">
+            <ul class="header-li">
+                <li>カテゴリ</li>
+                <li>ランキング</li>
+                <li>会社概要</li>
+                <li>店舗詳細</li>
+                <li>お問い合わせ</li>
+                
+            </ul>
+        </header>
+
+        <top-wrapper>
+            <div class="top-image">
+<!--市川修正_20220425 ここから-->
+                <ul class="slider">
+<!--市川修正_20220425 ここまで-->
+                    <li><img src ="photo/pic-new.png"></li>
+                    <li><img src ="photo/pic-pajama.png"></li>
+                    <li><img src ="photo/pic-spring.png"></li>
+                    <li><img src ="photo/pic-summer.png"></li>
+                </ul>
+            </div>
+            <div class="top-select">
+                <div class="login" id="login-show">ログイン</div>
+                <a href="#" class="acount">新規会員登録</a>     
+            </div>  
+
+        </top-wrapper>
+
+        <div class="popup">
+          <div class="content">
+            <div id="close"><i class="fa fa-close fa-2x"></i></div>
+              <div class="content-item">
+                <h3>会員ログイン</h3>
+                <input type="text" name="email" placeholder="ユーザーIDもしくはメールアドレス"><br>
+                <INPUT TYPE="password" SIZE="yyy" MAXLENGTH="zzz" placeholder="パスワード">
+                <h5>ログイン</h5>
+              </div>
+          </div>
+      </div>
+
+        <category-wrapper>
+            <h2>CATEGORY</h2>
+            <table class="category-table">
+                <tr>
+                    <td><a href="#" class="cate1" >マタニティグッズ</a></td>
+                    <td><a href="#" class="cate2">新生児服</a></td>
+                    <td><a href="#" class="cate3">ベビー服</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="cate2">子供服</a></td>
+                    <td><a href="#" class="cate3">おもちゃ</a></td>
+                    <td><a href="#" class="cate1">服飾雑貨</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="cate3">おでかけ雑貨</a></td>
+                    <td><a href="#" class="cate1">衛生用品</a></td>
+                    <td><a href="#" class="cate2">お部屋雑貨</a></td>
+                </tr>
+            </table>
+        </category-wrapper>
+
+        <profile-wrapper>
+            <div class="company-contents">
+                <h2>COMPANY PROFILE</h2>
+                <p class="profile-sentence">なのはな本舗は、お客様の喜びと不安に寄り添い、<br>お子様の成長を共に見守るパートナーです。</p>
+                <div class="profile-item1">
+                    <img src="photo/baby.png">
+                    <h3>ご自宅用にも━━━━━━━━</h3>
+                    <p>豊富な品揃えと幅広なサイズ展開で、長くご利用頂けます。</p>
+                </div>
+                <div class="profile-item2">
+                    <img src="photo/baby2.png">
+                    <h3>プレゼントにも━━━━━━━━</h3>
+                    <p>可愛らしい当社オリジナルラッピングをご用意。商品によっては名入れも可能です。</p>
+                </div>
+            </div>
+        </profile-wrapper>
+
+        <ranking-wrapper>
+            <div class="ranking-area">
+            <h2>RANKING</h2>
+                <div class="rank">
+                    <div class="ranking-contents">
+                        <h3>No.1</h3>
+                        <a href="new-index2.html"><img src="photo/rank-1.png" class="imghover"></a>
+                        <br>
+                        <a href="new-index2.html">[ベビー]<br>パーカー　ＵＶカット　グリーン<br>1,480円（税込 1,628円）</a>
+                        
+                    </div>
+                    <div class="ranking-contents">
+                        <h3>No.2</h3>
+                        <a href="#"><img src="photo/rank-2.png" class="imghover"></a>
+                        <br>
+                        <a href="#">[ベビー]<br>６分丈シャンブレーハーフブルー<br>1,600円（税込 1,760円）</a>
+                    </div>
+                    <div class="ranking-contents">
+                        <h3>No.3</h3>
+                        <a href="#"><img src="photo/rank-3.png" class="imghover"></a>
+                        <br>
+                        <a href="#">[48・50ｃｍ]ハット<br>クマ耳　洗える夏素材　ブラウン<br>2,100円（税込 2,310円)</a>
+                    </div>
+                </div>
+            </div>
+        </ranking-wrapper>
+
+        <news-wrapper>
+            <div class="news-contents">
+                <h2>NEWS</h2>
+                <div class="news-item">
+                    <ul>
+                        <a href="index1-2.html"><li><span>◆</span>千葉みなとに実店舗をオープンいたしました　（2022.4.25)</li></a>
+                        <li><span>◆</span>SUMMER　COLLECTION開催いたします！　（2022.4.1）</li>
+                        <li><span>◆</span>春の大セール開催中！　（2022.3.1）</li>
+                    </ul>
+                </div> 
+            </div>   
+        </news-wrapper>
+
+        <sns-wrapper>
+            <div class="sns-contents">
+                <h2>SNS</h2>
+                <div class="sns-item">
+                    <li><div class="twitter icon"><i class="fab fa-twitter fa-3x"></i></div></li>
+                    <li><div class="instagram icon"><i class="fab fa-instagram fa-3x"></i></div></li>
+                    <li><div class="line icon"><i class="fab fa-line fa-3x"></i></div></li>
+                </div>
+            </div>
+        </sns-wrapper>
+
+        <footer>
+            <li>よくあるご質問</li>
+            <li>採用情報</li>
+            <li>個人情報について</li>
+            <li>サイトマップ</li>
+        </footer>
+        
+        <script src ="js/script.js"></script>
+        
+    </body>
+</html>
+

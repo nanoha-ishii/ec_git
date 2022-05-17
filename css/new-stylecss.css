@@ -1,0 +1,712 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN W3', 'comic Sans MS';
+    background-color:white;
+}
+
+li {
+    list-style:none;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*ここからheader*/
+
+header {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    margin: 0 auto;
+    background-color:#ffb6c1;
+    border-bottom: dashed 6px white;
+    box-shadow: 0px 0px 0px 8px #ffb6c1;
+    z-index: 10;
+}
+.header-li {
+    padding-left: 27%;
+    font-size: 15px;
+}
+
+header li {
+    float: left;
+    display: block;
+    line-height: 75px;
+    padding:0 28px;
+}
+
+.header-li li:hover {
+    background: #ffccd0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px;
+    display: inline-block;
+    margin-top:15px;
+    float: left;
+}
+
+/*ここからtop-wrapper*/
+.top-image {
+    width: 70%;
+    text-align: center;
+    margin:0 auto;
+    padding-top:90px ;
+}
+
+
+.slider img {
+    width: 100%;
+}
+
+.slider {
+    width: 80%;
+}
+
+.top-select {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.login {
+    width: 20%;
+    display: inline-block;
+    height: 40px;
+    background-color:#ffd3b5;
+    cursor: pointer;
+    line-height: 40px;
+    border: dashed 4px white;
+    box-shadow: 0px 0px 0px 5px #ffd3b5;
+}
+
+.login:hover {
+    opacity: 0.8;
+
+}
+
+.acount {
+    width: 20%;
+    display: inline-block;
+    height: 40px;
+    background-color:#ffb3be;
+    margin-left:30px ;
+    cursor: pointer;
+    line-height: 40px;
+    line-height: 40px;
+    border: dashed 4px white;
+    box-shadow: 0px 0px 0px 5px #ffb3be;
+    color: black;
+}
+
+.acount:hover {
+    opacity: 0.8;
+
+}
+
+
+category-wrapper table {
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;;
+    height: 200px;
+    margin: 0 auto 70px auto;
+    font-size: 16px;
+    padding-bottom: 60px;
+}
+
+.category-table td {
+   
+    width: 20%;
+
+}
+
+.category-table td a {
+    display: block;
+    padding:32px 0;
+   color: black;
+   border-radius: 10px;
+}
+
+.cate1:hover {
+    background: #ffffea;
+}
+
+.cate2:hover {
+    background: #eaffea;
+}
+
+.cate3:hover {
+    background: #eaffff;
+}
+
+
+h2 {
+    text-align: center;
+    padding: 50px;
+    border-top: 4px dashed  #d3d3d3;
+}
+
+.ranking-area {
+    width: 100%;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.ranking-contents img {
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+}
+
+.ranking-contents a {
+    color: black;
+}
+
+.ranking-contents a:hover {
+    color: #4169e1;
+}
+
+.ranking-contents {
+    width: 28%;
+    float: left;
+    margin: 0 25px;
+}
+
+.rank {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.profile-wrapper h2 {
+    margin:50% 0;
+    text-align: center;
+}
+
+.company-contents {
+    width: 100%;
+    margin: 0 auto;
+    height: 740px;
+}
+
+.company-contents {
+    background-color: #fff0f5;
+}
+
+.profile-sentence {
+    font-size:20px;
+    text-align: center;
+}
+
+.profile-item1 {
+    width: 40%;
+    height: 400px;
+    float: left;
+    margin: 3% 0 0 15%;
+}
+
+.profile-item2 {
+    width: 40%;
+    height: 400px;
+    float: left;
+    margin: 3% 0 0 0;
+}
+
+.company-contents img {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.profile-item p {
+   font-size: 18px;
+   display: block;
+}
+
+
+footer {
+
+    background-color:rgb(150, 150, 150);
+    height: 100px;
+text-align: center;
+}
+
+footer li {
+    float: right;
+    line-height: 100px;
+    padding: 0 20px;
+}
+
+.merchan-contents {
+    width: 80%;
+    margin: 0 auto;
+    padding-top:120px;
+    height: 680px;
+}
+
+.merchan-item {
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+
+.main-img {
+    height: 370px;
+    width: 90%;
+    padding-left: 15px;
+}
+
+.main-img img {
+    height: auto;
+    width: 85%;
+}
+
+.sub-img {
+
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.sub-img img {
+    width: 80px;
+    float: left;
+    display: block;
+    padding-left: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.sub-img li:nth-child(3n) {
+    margin-right: 0;
+ }
+.sub-img li img {
+    border: 2px solid transparent;
+    transition: border .5s;
+}
+ 
+  
+
+.value {
+   width: 50%;
+   float: right;
+}
+
+.value-quantity {
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+}
+
+.value-quantity {
+    font-size: 17px;
+    float: left;
+}
+
+.value-quantity p {
+    font-size: 15px;
+    display: inline-block;
+    width: 100px;
+}
+
+.sample_input {
+    font-size: 18px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.select-form {
+    width:45px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left:30px ;
+}
+
+.kounyuubtn  {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.kounyuubtn a {
+    display: inline-block;
+    float: right;
+    width: 220px;
+    color: black;
+    text-align: center;
+    background-color: #ffffb2;
+    border: 2px solid rgb(190, 190, 190);
+    height: 34px;
+    line-height: 34px;
+}
+
+.value input{
+    color: #ffb03f;
+}
+
+.kounyuubtn a:hover {
+    border: 2px solid rgb(255, 156, 69);
+}
+
+.customer {
+    width: 50%;
+    display: inline-block;
+}
+
+
+form {
+    width: 80%;
+    margin:0 auto;
+    padding-top: 130px ;
+    height: 880px;
+
+}
+
+.form-table {
+    width: 60%;
+    
+}
+
+tbody {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+.yuubin {
+    width: 70px;
+}
+
+.todouhuken {
+    width: 80px;
+}
+
+.address {
+    width: 300px;
+    
+}
+
+.name {
+    width: 90px;
+    float: left;
+    margin-right: 5px ;
+}
+
+.naire {
+    resize:vertical;
+    width: 300px;
+}
+
+.manth {
+    width: 50px;
+}
+
+form h3 {
+    border-bottom: 2px dotted gray;
+    display: block;
+    width: 50%;
+    
+}
+
+.btndecision {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    background-color: #ffffb2;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(190, 190, 190);
+    height: 34px;
+    line-height: 34px;
+    
+}
+
+.buybtn {
+    width: 30%;
+    margin: 50px auto;
+}
+
+.btndecision:hover {
+    border: 2px solid rgb(255, 156, 69);
+}
+
+.btndecision:active {
+    box-shadow:none;
+    position:relative;
+    top:3px;
+}
+
+.form-sub {
+    position: fixed;
+    top: 110px;
+    left: 800px;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    background-color: #ededed;
+}
+
+.form-sub img {
+    width: 80%;
+}
+
+.form-sub h4 {
+    border-top: 2px double gray;
+}
+
+.thanks-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.thanks-logo {
+    width: 100%;
+}
+
+.backhome-wrapper img {
+    width: 150px;
+}
+
+.backhome-wrapper  {
+    margin: 20px 0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.backhome-wrapper a:hover {
+    opacity: 0.7;
+}
+
+
+
+access-wrapper  {
+    width: 80%;
+    margin: 0 auto;
+    height: 1100px;
+}
+
+.access-contents {
+    width: 90%;
+    margin: 0 auto;
+    height: 450px;
+}
+
+.access-contents h2 {
+    text-align: center;
+}
+
+
+
+
+
+#map {
+    
+    float: left;
+    width: 42%;
+    height: 390px;
+}
+
+
+
+.shop {
+float: right;
+width: 52%;
+}
+
+.shop h3 {
+    border-bottom: 2px solid gray;
+}
+
+.consept-sentence {
+    width: 48%;
+    display: inline-block;
+
+}
+
+.consept-sentence h3 {
+    border-bottom:2px solid gray ;
+}
+
+.kouenn img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.tower img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+
+.kouenn {
+    width: 50%;
+    display: block;
+    float: left;
+} 
+
+.tower {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.consept {
+    padding-top: 120px;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+.consept-img {
+    width: 50%;
+    float: right;
+    padding-top: 30px;
+}
+
+.consept-img img {
+    width: 100%;
+
+}
+
+.news-contents {
+    width: 49%;
+    display: inline-block;
+    height: 300px;
+    float: left;
+    border-right: 4px dashed  #d3d3d3;
+    background-color: #e6ffee;
+}
+
+.news-item {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.news-item a {
+    color: black;
+}
+
+.news-item li:hover {
+    color: #4169e1;
+    cursor: pointer;
+}
+
+.sns-contents {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    background-color:#e6f6ff;
+}
+
+.twitter.icon {
+    color: #55acee;
+    width: 50px;
+}
+
+.sns-item li {
+    display: inline-block;
+    margin: 0 13px;
+}
+
+sns-item {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+
+}
+
+.instagram.icon {
+    width: 50px;
+    color: #e1306c;
+}
+
+.line.icon {
+    width: 50px;
+    color: #00c300;
+}
+
+
+.popup {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ 
+.content{
+    background: #ffeddb;
+    padding: 30px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 7px #ffeddb;/*線の外側*/
+    border: dashed 4px #ffb03f;
+}
+
+.content-item {
+    text-align: center;
+}
+
+.content-item input {
+    margin-top: 10px;
+}
+
+.content-item h3 {
+    margin: 20px;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content input {
+    width: 90%;
+    font-size: 1.1rem;
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: #dc143c;
+
+}
+
+.content h5 {
+    padding:10px;
+    background-color: #ffb03f;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.content h5:hover{
+    opacity: 0.8;
+}

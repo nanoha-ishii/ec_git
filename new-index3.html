@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>なのはな本舗</title>
+        <link rel="stylesheet" href="css/new-stylecss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    
+    <header>
+        <img src="photo/logo.png" class="logo">
+        <ul class="header-li">
+            <li>カテゴリ</li>
+            <li>ランキング</li>
+            <li>会社概要</li>
+            <li>店舗詳細</li>
+            <li>お問い合わせ</li>
+            
+        </ul>
+    </header>
+<body>
+      <div id="app">
+        <form>
+        <h3>お客様情報入力</h3>
+        <br>
+            <table class="form-table">
+                <tbody>
+                    <tr>
+                        <th>名前</th>
+                        <td>
+                            <input id="your_name" type="text" name="name" placeholder="姓" class="name">
+                            <input id="your_name" type="text" name="name" placeholder="名" class="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>郵便番号</th>
+                        <td>
+                            <input id="input" class="zipcode" type="text" name="zipcode" value="" placeholder="例)8120012">
+                            <button id="search" type="button">住所検索</button>
+                            <p id="error"></p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <th>都道府県</th>
+                        <td><input id="address1" type="text" name="address1" value=""></td>
+                    </tr>
+    
+                    <tr>
+                        <th>市区町村</th>
+                        <td><input id="address2" type="text" name="address2" value=""></td>
+                    </tr>
+    
+                    <tr>
+                        <th>町域</th>
+                        <td><input id="address3" type="text" name="address3" value=""></td>
+                    </tr>
+                    <tr>
+                        <th>以降の住所</th>
+                        <td><input type="text" name="shikuchouson" class="address"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="text" name="shikuchouson" class="address"></td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td><input type="tel" name="tel" placeholder="ハイフンあり" class="telnumber"></td>
+                    </tr>
+                    <tr>
+                        <th>名入れ</th>
+                        <td><textarea name="naire" placeholder="ひらがな・片仮名・ローマ字（大文字）のみ16文字以内のみ可能です" class="naire" rows="4" cols="40"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table class="form-table">
+                <h3>お届け先（上記と異なる場合）</h3>
+                <br>
+                <tbody>        
+                    
+                    <tr>
+                        <th>名前</th>
+                        <td>
+                            <input  type="text" name="name" placeholder="姓" class="name">
+                            <input  type="text" name="name" placeholder="名" class="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>郵便番号</th>
+                        <td>
+                            <input id="input" class="zipcode" type="text" name="zipcode" value="" placeholder="例)8120012">
+                            <button id="search" type="button">住所検索</button>
+                            <p id="error"></p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>都道府県</th>
+                        <td><input id="address1" type="text" name="address1" value=""></td>
+                    </tr>
+    
+                    <tr>
+                        <th>市区町村</th>
+                        <td><input id="address2" type="text" name="address2" value=""></td>
+                    </tr>
+    
+                    <tr>
+                        <th>町域</th>
+                        <td><input id="address3" type="text" name="address3" value=""></td>
+                    </tr>
+                    <tr>
+                        <th>以降の住所</th>
+                        <td><input type="text" name="shikuchouson" class="address"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="text" name="shikuchouson" class="address"></td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td><input type="tel" name="tel" placeholder="ハイフンあり" class="telnumber"></td>
+                    </tr>   
+                </tbody>
+            </table>
+            <br><br>
+            <table class="form-table">
+                <h3>お支払い情報（カード情報）</h3>
+                <br>
+                <tbody>        
+                    <tr>
+                        <th>名義人</th>
+                        <td><input type="text"  value=""></td>
+                    </tr>
+                    <tr>
+                        <th>カード番号</th>
+                        <td><input type="text"  class="address"></td>
+                    </tr>
+                    <tr>
+                        <th>有効期限</th>
+                        <td>
+                            <input  type="text" placeholder="月" class="manth">
+                            <input  type="text" placeholder="年" class="manth">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <form-subwrapper>
+            <div class="form-sub">
+                    <img src="photo/rank-1.png">
+                    <h5>パーカーＵＶカット　グリーン　2点</h5>
+                    <li>小計　 ¥3,256</li>       
+                    <li>送料 　　¥550</li>
+                    <br>
+                    <h4>合計 　 ¥3,806</h4>  
+            </div>
+        </form-subwrapper>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script src="js/script3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fetch-jsonp@1.1.3/build/fetch-jsonp.min.js"></script>
+</body>
+</html>
+      <div class="buybtn">
+        <a href="new-index4.html" id="submit_btn" class="btndecision">注文確定</a> 
+      </div>
+      
+      <footer>
+        <li>よくあるご質問</li>
+        <li>採用情報</li>
+        <li>個人情報について</li>
+        <li>サイトマップ</li>
+    </footer>  
+        
+
+</body>
+</html>
+
